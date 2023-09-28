@@ -13,8 +13,8 @@ export interface PointsProps {
 
 export default function Rules({ title, points }: RulesProps) {
   return (
-    <div class="w-full bg-[#0A2121]">
-      <div class="flex flex-col gap-6">
+    <div class="w-full bg-[#0A2121] py-5 md:py-10">
+      <div class="xl:container xl:mx-auto mx-5 md:mx-10 flex flex-col gap-6">
         <div class="flex justify-start">
           <p class="text-[#02F67C] font-semibold text-[40px]">{title}</p>
         </div>
@@ -22,10 +22,12 @@ export default function Rules({ title, points }: RulesProps) {
           {points?.map(({ title, description }: PointsProps, index: number) => (
             <div
               key={index}
-              class="text-[#FFFFFF] flex flex-col md:flex-row gap-4 md:gap-6 justify-start p-4 md:p-5 lg:p-6"
+              class="text-[#FFFFFF] grid grid-rows-[20px_1px_1fr_1px] grid-cols-1 md:grid-rows-1 md:grid-cols-[150px_1px_1fr_1px] gap-4 md:gap-6 justify-start p-4 md:p-5 lg:p-6"
             >
-              <p>{title}</p>
-              {description && <p dangerouslySetInnerHTML={{ __html: description }} />}
+              <p class="w-max text-[32px] font-medium">{title}</p>
+              {description && (
+                <p dangerouslySetInnerHTML={{ __html: description }} />
+              )}
             </div>
           ))}
         </div>

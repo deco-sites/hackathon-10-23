@@ -12,6 +12,12 @@ export interface AwardsProps {
   };
 }
 
+const BACKGROUND_AWARDS = {
+  [0 as number]: "rgba(255, 232, 23, 0.3)",
+  [1 as number]: "rgba(255, 255, 255, 0.3)",
+  [2 as number]: "rgba(255, 169, 3, 0.3)",
+};
+
 export interface EliminatoriesAwardsProps {
   iconLabel?: AvailableIcons;
   title?: string;
@@ -31,8 +37,8 @@ export default function Awards(
   { titleSection, elimination, finalist }: AwardsProps,
 ) {
   return (
-    <div class="bg-[#0A2121] w-full">
-      <div class="flex flex-col items-center gap-6">
+    <div class="bg-[#0A2121] w-full py-5 md:py-10">
+      <div class="xl:container xl:mx-auto mx-5 md:mx-10 py-5 md:p-10 flex flex-col items-start gap-6">
         <div class="flex justify-start">
           <p class="font-semibold text-[#02F67C] text-[40px]">
             {titleSection}
@@ -44,16 +50,24 @@ export default function Awards(
               {elimination?.title}
             </p>
           )}
-          <div class="flex">
+          <div class="grid grid-cols-2 gap-4 rounded-2xl">
             {elimination?.cards?.map((
               { iconLabel, title, description }: EliminatoriesAwardsProps,
               index: number,
             ) => (
               <div
                 key={index}
-                class="flex flex-col justify-start items-center bg-[#0C2929] p-4 gap-3 md:gap-4"
+                class="flex flex-col justify-start items-start bg-[#0C2929] p-6 md:p-10 gap-3 md:gap-4"
               >
-                {iconLabel && <Icon id={iconLabel} />}
+                {iconLabel && (
+                  <div class="relative">
+                    <div
+                      class="absolute z-0 top-0 left-0 rounded-full w-full h-full"
+                      style={{ backgroundColor: "rgba(218, 143, 255, 0.3)" }}
+                    />
+                    <Icon id={iconLabel} size={80} />
+                  </div>
+                )}
                 {title && (
                   <p class="text-[#FFFFFF] font-semibold md:text-[32px]">
                     {title}
@@ -72,16 +86,24 @@ export default function Awards(
               {finalist?.title}
             </p>
           )}
-          <div class="flex">
+          <div class="grid grid-cols-3 gap-4 rounded-2xl">
             {finalist?.cards?.map((
               { iconLabel, title, description, price }: FinalistAwardsProps,
               index: number,
             ) => (
               <div
                 key={index}
-                class="flex flex-col justify-center items-center bg-[#0C2929] p-4 gap-3 md:gap-4"
+                class="flex flex-col justify-center items-center bg-[#0C2929] p-5 md:p-10 gap-3 md:gap-6"
               >
-                {iconLabel && <Icon id={iconLabel} />}
+                {iconLabel && (
+                  <div class="relative">
+                    <div
+                      class="absolute z-0 top-0 left-0 rounded-full w-full h-full"
+                      style={{ backgroundColor: BACKGROUND_AWARDS[index] }}
+                    />
+                    <Icon id={iconLabel} size={80} />
+                  </div>
+                )}
                 {title && (
                   <p class="text-[#FFFFFF] font-semibold text-lg md:text-[32px]">
                     {title}
