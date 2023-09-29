@@ -26,7 +26,18 @@
   }
 
   .bg-gradient-green {
-    background: radial-gradient(circle, rgba(0,255,128,1) -300%, rgba(10,33,33,1) 75%);
+    animation: changeBackgroundColor 3s ease-in-out alternate infinite;
+  }
+
+  .div-right-top:before,
+  .div-right-top p:before{
+      top: 20px; 
+      transform-origin: 54% top;
+      transform: rotate(45deg);    
+  }
+  .div-right-top p:before{    
+      top: 19px;
+      background: #DA8FFF;    
   }
 }
 
@@ -58,5 +69,65 @@
   }
   to {
     transform: translateX(-50%)
+  }
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -300%, rgba(10,33,33,1) 75%);
+  }
+  5% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -290%, rgba(10,33,33,1) 75%);
+  }
+  10% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -280%, rgba(10,33,33,1) 75%);
+  }
+  15% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -270%, rgba(10,33,33,1) 75%);
+  }
+  20% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -260%, rgba(10,33,33,1) 75%);
+  }
+  25% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -250%, rgba(10,33,33,1) 75%);
+  }
+  30% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -240%, rgba(10,33,33,1) 75%);
+  }
+  35% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -230%, rgba(10,33,33,1) 75%);
+  }
+  40% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -220%, rgba(10,33,33,1) 75%);
+  }
+  45% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -210%, rgba(10,33,33,1) 75%);
+  }
+  50% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -200%, rgba(10,33,33,1) 75%);
+  }
+  55% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -190%, rgba(10,33,33,1) 75%);
+  }
+  60% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -180%, rgba(10,33,33,1) 75%);
+  }
+  65% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -170%, rgba(10,33,33,1) 75%);
+  }
+  70% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -160%, rgba(10,33,33,1) 75%);
+  }
+  75% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -150%, rgba(10,33,33,1) 75%);
+  }
+  80% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -140%, rgba(10,33,33,1) 75%);
+  }
+  90% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -130%, rgba(10,33,33,1) 75%);
+  }
+  100% {
+    background: radial-gradient(circle, rgba(0,255,128,1) -120%, rgba(10,33,33,1) 75%)
   }
 }

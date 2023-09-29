@@ -35,7 +35,7 @@ export default function HeroAndHeader(
       <div class="hidden md:block relative bg-[#0A2121] z-[-2] pt-4">
         <Icon
           id="Background"
-          class="w-full h-full absolute z-[-1] -top-9 left-0 pointer-events-none"
+          class="w-full h-full absolute z-[-1] -top-9 left-0 pointer-events-none object-cover overflow-hidden"
         />
         <div class="lg:container flex flex-col md:mx-auto gap-4 pt-10 px-4">
           <div class="flex justify-between">
@@ -58,7 +58,7 @@ export default function HeroAndHeader(
             </div>
           </div>
           <div class="flex flex-col gap-4">
-            <p class="text-[15vw] 2xl:text-[260px] text-[#FAFAFA] font-bold h-48 flex items-center">
+            <p class="text-[16vw] lg:text-[170px] xl:text-[215px] 2xl:text-[260px] text-[#FAFAFA] font-bold h-48 flex items-center">
               {title}
             </p>
             <div class="flex justify-between">
@@ -68,16 +68,15 @@ export default function HeroAndHeader(
                 </div>
               )}
               {cta?.text && (
-                <div class="py-24 px-14 bg-gradient-green">
+                <div class="py-24 px-14 bg-gradient-green relative z-[-2]">
                   <div class="flex flex-col gap-2">
-                    <a class="relative flex justify-center" href={cta?.href}>
+                    <a class="relative flex justify-center text-[#00FF80]" href={cta?.href}>
                       <Icon
                         id="ButtonTicket"
                         width="274"
                         height="88"
-                        class="text-[#00FF80]"
                       />
-                      <span class="absolute top-5 z-0 font-bold text-[32px]">
+                      <span class="absolute top-5 z-0 font-bold text-[32px] text-[#000] hover:text-[#FFFFFF]">
                         {cta.text}
                       </span>
                     </a>

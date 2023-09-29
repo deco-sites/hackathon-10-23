@@ -38,7 +38,7 @@ export default function Awards(
 ) {
   return (
     <div class="bg-[#0A2121] w-full py-5 md:py-10">
-      <div class="xl:container xl:mx-auto mx-5 md:mx-10 py-5 md:p-10 flex flex-col items-start gap-6">
+      <div class="xl:container xl:mx-auto mx-5 md:mx-10 py-5 flex flex-col items-start gap-6">
         <div class="flex justify-start">
           <p class="font-semibold text-[#02F67C] text-[40px]">
             {titleSection}

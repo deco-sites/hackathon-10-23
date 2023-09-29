@@ -1,3 +1,5 @@
+import { asset } from "$fresh/runtime.ts";
+
 export interface ChallengeProps {
   title: string;
 
@@ -9,7 +11,7 @@ export default function Challenge(
   { title, description }: ChallengeProps,
 ) {
   return (
-    <div class="w-full bg-[#0A2121]">
+    <div class="w-full bg-[#0A2121] bg-cover" style={{ backgroundImage: `url(${asset("/BackgroundChallenge.png")})` }}>
       <div class="xl:container xl:mx-auto mx-5 md:mx-10 flex flex-col md:flex-row py-6 md:py-12 items-center">
         <div class="font-semibold text-[#FFFFFF] text-[40px] md:text-[60px] lg:text-[80px] text-center">
           {title}

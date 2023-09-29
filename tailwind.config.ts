@@ -1,3 +1,5 @@
+import daisyui from "daisyui";
+
 export const theme = {
   "primary": "hsl(180 100% 10%)",
   "secondary": "hsl(0 39% 39%)",
