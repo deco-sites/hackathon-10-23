@@ -21,6 +21,10 @@
     appearance: textfield;
   }
 
+  .animate-walk {
+    animation: walk 30s ease-in-out alternate infinite;
+  }
+
   .bg-gradient-green {
     background: radial-gradient(circle, rgba(0,255,128,1) -300%, rgba(10,33,33,1) 75%);
   }
@@ -45,5 +49,14 @@
 
   .scrollbar-none::-webkit-scrollbar {
     display: none;
+  }  
+}
+
+@keyframes walk {
+  from {
+    transform: translateX(0%)
+  }
+  to {
+    transform: translateX(-50%)
   }
 }

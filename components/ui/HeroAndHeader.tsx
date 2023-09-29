@@ -105,56 +105,57 @@ export default function HeroAndHeader(
       <div class="block md:hidden relative bg-[#0A2121]">
         <Icon id="Background" class="w-full h-full absolute z-0 top-0 left-0" />
         <div class="flex flex-col gap-4 pt-10 px-4">
-        <div class="flex justify-start">
-            <img src={logo?.src ?? ""} alt={logo?.alt ?? "Logo by deco"} />    
-        </div>
-        <div class="flex flex-col gap-4">
-          <p class="text-[50px] sm:text-[65px] text-[#FAFAFA] font-bold h-12 flex items-center">
-            {title}
-          </p>
-          <div class="flex justify-between relative pb-36">
-            {iconLabel && (
-              <div>
-                <Icon id={iconLabel} width={40} height={40} />
-              </div>
-            )}
-            {cta?.text && (
-              <div class="w-full flex justify-center">
-                <div class="mt-4 pt-4 pb-5 px-3 rounded-full bg-transparent sm:bg-gradient-green absolute top-10 z-[0]">
-                  <div class="flex flex-col gap-2 text-center items-center">
-                    <a class="relative flex justify-center" href={cta?.href}>
-                      <Icon
-                        id="ButtonTicket"
-                        width="150"
-                        height="50"
-                        class="text-[#00FF80]"
-                      />
-                      <span class="absolute top-3 z-0 font-bold text-[18px]">
-                        {cta.text}
-                      </span>
-                    </a>
-                    {cta?.infoBottom && (
-                      <p class="text-center"
-                        dangerouslySetInnerHTML={{ __html: cta?.infoBottom }}
-                      />
-                    )}
+          <div class="flex justify-start">
+            <img src={logo?.src ?? ""} alt={logo?.alt ?? "Logo by deco"} />
+          </div>
+          <div class="flex flex-col gap-4">
+            <p class="text-[50px] sm:text-[65px] text-[#FAFAFA] font-bold h-12 flex items-center">
+              {title}
+            </p>
+            <div class="flex justify-between relative pb-36">
+              {iconLabel && (
+                <div>
+                  <Icon id={iconLabel} width={40} height={40} />
+                </div>
+              )}
+              {cta?.text && (
+                <div class="w-full flex justify-center">
+                  <div class="mt-4 pt-4 pb-5 px-3 rounded-full bg-transparent sm:bg-gradient-green absolute top-10 z-[0]">
+                    <div class="flex flex-col gap-2 text-center items-center">
+                      <a class="relative flex justify-center" href={cta?.href}>
+                        <Icon
+                          id="ButtonTicket"
+                          width="150"
+                          height="50"
+                          class="text-[#00FF80]"
+                        />
+                        <span class="absolute top-3 z-0 font-bold text-[18px]">
+                          {cta.text}
+                        </span>
+                      </a>
+                      {cta?.infoBottom && (
+                        <p
+                          class="text-center"
+                          dangerouslySetInnerHTML={{ __html: cta?.infoBottom }}
+                        />
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            )}
-            {description && (
-              <div>
-                <p class="text-[#C9CFCF] text-[22px] font-medium">
-                  {description}
-                </p>
-              </div>
-            )}
+              )}
+              {description && (
+                <div>
+                  <p class="text-[#C9CFCF] text-[22px] font-medium">
+                    {description}
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
-        </div>
-        <div class="flex flex-col justify-center items-center gap-4">
-          {links?.map((
-            { href, label, iconLabel }: LinksProps,
-            index: number,
+          <div class="flex flex-col justify-center items-center gap-4">
+            {links?.map((
+              { href, label, iconLabel }: LinksProps,
+              index: number,
             ) => (
               <a
                 href={href}

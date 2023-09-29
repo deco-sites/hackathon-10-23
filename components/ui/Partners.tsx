@@ -8,11 +8,8 @@ export interface Image {
 
 export interface Props {
   title?: string;
-  description?: string;
+
   images?: Image[];
-  layout?: {
-    headerAlignment?: "center" | "left";
-  };
 }
 
 const IMAGES = [
@@ -31,9 +28,7 @@ const IMAGES = [
 function Partners(props: Props) {
   const {
     title,
-    description,
     images,
-    layout,
   } = props;
   const list = useMemo(
     () =>
@@ -47,22 +42,45 @@ function Partners(props: Props) {
     <div class="w-full bg-[#0A2121] py-5 md:py-10">
       <div class="xl:container xl:mx-auto mx-5 md:mx-10 flex flex-col gap-4 lg:gap-8">
         {title && (
-            <p class="text-[#02F67C] text-[40px] font-semibold">{title}</p>
-          )}
+          <p class="text-[#02F67C] text-[40px] font-semibold">{title}</p>
+        )}
+
         <div class="w-full text-center items-center">
-          {list.map((element) => (
-            <div class="w-36 lg:w-40 h-17 lg:h-20 px-4 lg:px-6 py-6 lg:py-4 inline-block align-middle">
-              <div class="flex w-full h-full items-center justify-center">
+          <div class="overflow-hidden pt-2">
+            <div class="flex flex-row flex-nowrap w-full animate-walk py-2 items-center gap-4">
+              {list.map((element, index) => (
                 <img
-                  width={300}
-                  height={300}
+                  key={index}
                   src={element.image}
                   alt={element.altText || ""}
-                  class="max-w-full max-h-full"
                 />
-              </div>
+              ))}
             </div>
-          ))}
+            <div
+              style="animation-delay: 300ms"
+              class="flex flex-row flex-nowrap w-full animate-walk py-2 items-center gap-4"
+            >
+              {list.map((element, index) => (
+                <img
+                  key={index}
+                  src={element.image}
+                  alt={element.altText || ""}
+                />
+              ))}
+            </div>
+            <div
+              style="animation-delay: 600ms"
+              class="flex flex-row flex-nowrap w-full animate-walk py-2 items-center gap-4"
+            >
+              {list.map((element, index) => (
+                <img
+                  key={index}
+                  src={element.image}
+                  alt={element.altText || ""}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
