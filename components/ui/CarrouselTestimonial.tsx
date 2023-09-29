@@ -32,7 +32,7 @@ function TestimonialItem(
   { testimonial, lcp }: { testimonial: TestimonialsProps; lcp?: boolean },
 ) {
   return (
-    <div class="border border-[#FFFFFF] text-[#FFFFFF] bg-transparent flex flex-col items-start gap-4 md:gap-6">
+    <div class="card card-compact group border border-[#FFFFFF] text-[#FFFFFF] bg-transparent flex flex-col items-start gap-4 md:gap-6">
       {testimonial?.comentary && <p class="text-lg">{testimonial?.comentary}
       </p>}
       <div class="flex gap-4">
@@ -121,8 +121,8 @@ function CarrouselTestimonial(
   const id = useId();
 
   return (
-    <div class="bg-[#0A2121] w-full">
-      <div class="flex flex-col gap-2">
+    <div class="bg-[#0A2121] w-full py-5 md:py-10 hidden">
+      <div class="xl:container xl:mx-auto mx-5 md:mx-10 flex flex-col gap-2">
         {title && (
           <p class="text-[#02F67C] text-[40px] font-semibold">{title}</p>
         )}
@@ -131,11 +131,11 @@ function CarrouselTestimonial(
 
         <div
           id={id}
-          class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px]"
+          class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px]"
         >
-          <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-6">
+          <Slider class="carousel carousel-center sm:carousel-end w-full col-span-full row-start-2 row-end-5 gap-6">
             {testimonials?.map((testimonial, index) => (
-              <Slider.Item index={index} class="carousel-item w-full">
+              <Slider.Item index={index} class="carousel-item w-[400px]">
                 <TestimonialItem
                   testimonial={testimonial}
                   lcp={index === 0 && preload}

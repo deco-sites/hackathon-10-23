@@ -3,6 +3,8 @@ import type { JSX } from "preact";
 
 export type AvailableIcons =
   | "Background"
+  | "LinkedIn"
+  | "GitHub"
   | "ButtonTicket"
   | "ChevronLeft"
   | "ChevronRight"

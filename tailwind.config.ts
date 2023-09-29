@@ -22,5 +22,7 @@ export const theme = {
 };
 
 export default {
+  plugins: [daisyui],
+  daisyui: { themes: [], logs: false },
   content: ["./**/*.tsx"],
 };

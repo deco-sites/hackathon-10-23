@@ -22,7 +22,7 @@ export default function Rules({ title, points }: RulesProps) {
           {points?.map(({ title, description }: PointsProps, index: number) => (
             <div
               key={index}
-              class="text-[#FFFFFF] grid grid-rows-[20px_1px_1fr_1px] grid-cols-1 md:grid-rows-1 md:grid-cols-[150px_1px_1fr_1px] gap-4 md:gap-6 justify-start p-4 md:p-5 lg:p-6"
+              class="text-[#FFFFFF] grid grid-rows-[20px_1px_1fr_1px] grid-cols-1 md:grid-rows-1 md:grid-cols-[150px_1px_1fr_1px] gap-4 md:gap-6 justify-start md:p-5 lg:p-6"
             >
               <p class="w-max text-[32px] font-medium">{title}</p>
               {description && (
