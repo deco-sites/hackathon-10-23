@@ -38,7 +38,7 @@ export default function Awards(
 ) {
   return (
     <div class="bg-[#0A2121] w-full py-5 md:py-10">
-      <div class="xl:container xl:mx-auto mx-5 md:mx-10 py-5 flex flex-col items-start gap-6">
+      <div class="xl:container xl:mx-auto mx-4 md:mx-10 flex flex-col items-start gap-6">
         <div class="flex justify-start">
           <p class="font-semibold text-[#02F67C] text-[40px]">
             {titleSection}
@@ -50,14 +50,14 @@ export default function Awards(
               {elimination?.title}
             </p>
           )}
-          <div class="grid grid-cols-2 gap-4 rounded-2xl">
+          <div class="grid grid-cols-2 gap-2 md:gap-4 rounded-2xl">
             {elimination?.cards?.map((
               { iconLabel, title, description }: EliminatoriesAwardsProps,
               index: number,
             ) => (
               <div
                 key={index}
-                class="flex flex-col justify-start items-start bg-[#0C2929] p-6 md:p-10 gap-3 md:gap-4"
+                class="flex flex-col justify-start items-start bg-[#0C2929] p-6 md:p-10 gap-3 md:gap-4 rounded-md"
               >
                 {iconLabel && (
                   <div class="relative">
@@ -74,7 +74,9 @@ export default function Awards(
                   </p>
                 )}
                 {description && (
-                  <p dangerouslySetInnerHTML={{ __html: description }} />
+                  <div class="text-xs md:text-2xl">
+                    <p dangerouslySetInnerHTML={{ __html: description }} />
+                  </div>
                 )}
               </div>
             ))}
@@ -86,14 +88,14 @@ export default function Awards(
               {finalist?.title}
             </p>
           )}
-          <div class="grid grid-cols-3 gap-4 rounded-2xl">
+          <div class="grid grid-cols-3 gap-2 md:gap-4 rounded-2xl">
             {finalist?.cards?.map((
               { iconLabel, title, description, price }: FinalistAwardsProps,
               index: number,
             ) => (
               <div
                 key={index}
-                class="flex flex-col justify-center items-center bg-[#0C2929] p-5 md:p-10 gap-3 md:gap-6"
+                class="flex flex-col justify-center items-center bg-[#0C2929] px-2 py-4 md:p-10 gap-3 md:gap-6 rounded-md"
               >
                 {iconLabel && (
                   <div class="relative">

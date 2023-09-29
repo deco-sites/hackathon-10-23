@@ -33,7 +33,10 @@ export default function HeroAndHeader(
   return (
     <>
       {/* DESKTOP VERSION */}
-      <div class="hidden md:block relative bg-[#0A2121] bg-no-repeat bg-repeat-x" style={{ backgroundImage: `url(${asset(`/backgroundTop.svg`)})` }}>
+      <div
+        class="hidden md:block relative bg-[#0A2121] bg-no-repeat bg-repeat-x"
+        style={{ backgroundImage: `url(${asset(`/backgroundTop.svg`)})` }}
+      >
         <div class="lg:container flex flex-col md:mx-auto gap-4 pt-14 px-4">
           <div class="flex justify-between">
             <img src={logo?.src ?? ""} alt={logo?.alt ?? "Logo by deco"} />
@@ -101,8 +104,7 @@ export default function HeroAndHeader(
       </div>
 
       {/* MOBILE VERSION */}
-      <div class="block md:hidden relative bg-[#0A2121]">
-        <Icon id="Background" class="w-full h-full absolute z-0 top-0 left-0" />
+      <div class="block md:hidden relative bg-[#0A2121] bg-no-repeat bg-contain" style={{ backgroundImage: `url(${asset(`/backgroundTop.svg`)})` }}>
         <div class="flex flex-col gap-4 pt-10 px-4">
           <div class="flex justify-start">
             <img src={logo?.src ?? ""} alt={logo?.alt ?? "Logo by deco"} />
@@ -151,7 +153,7 @@ export default function HeroAndHeader(
               )}
             </div>
           </div>
-          <div class="flex flex-col justify-center items-center gap-4">
+          <div class="flex flex-col justify-center items-center gap-4 mb-4">
             {links?.map((
               { href, label, iconLabel }: LinksProps,
               index: number,
