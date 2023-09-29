@@ -1,5 +1,6 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Icon, { AvailableIcons } from "./Icon.tsx";
+import { asset } from "$fresh/runtime.ts";
 
 export interface HeroProps {
   /** @title Logo */
@@ -32,12 +33,8 @@ export default function HeroAndHeader(
   return (
     <>
       {/* DESKTOP VERSION */}
-      <div class="hidden md:block relative bg-[#0A2121] z-[-2] pt-4">
-        <Icon
-          id="Background"
-          class="w-full h-full absolute z-[-1] -top-9 left-0 pointer-events-none object-cover overflow-hidden"
-        />
-        <div class="lg:container flex flex-col md:mx-auto gap-4 pt-10 px-4">
+      <div class="hidden md:block relative bg-[#0A2121] bg-no-repeat bg-repeat-x" style={{ backgroundImage: `url(${asset(`/backgroundTop.svg`)})` }}>
+        <div class="lg:container flex flex-col md:mx-auto gap-4 pt-14 px-4">
           <div class="flex justify-between">
             <img src={logo?.src ?? ""} alt={logo?.alt ?? "Logo by deco"} />
             <div class="flex gap-4">
@@ -68,9 +65,12 @@ export default function HeroAndHeader(
                 </div>
               )}
               {cta?.text && (
-                <div class="py-24 px-14 bg-gradient-green relative z-[-2]">
+                <div class="py-24 px-14 bg-gradient-green relative z-[0] rounded-full">
                   <div class="flex flex-col gap-2">
-                    <a class="relative flex justify-center text-[#00FF80]" href={cta?.href}>
+                    <a
+                      class="relative flex justify-center text-[#00FF80]"
+                      href={cta?.href}
+                    >
                       <Icon
                         id="ButtonTicket"
                         width="274"
