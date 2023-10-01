@@ -27,7 +27,7 @@ export default function Intro({ left, right }: IntroProps) {
     <div class="w-full bg-[#0A2121]">
       <div class="flex mx-6 md:mx-10 py-5 pb-10 xl:container xl:mx-auto">
         <div class="bg-[#DA8FFF] text-[#0A2121] flex flex-col gap-4 p-4 w-full md:mr-6 md:p-6 relative">
-          <div id="triangulo" class="absolute top-[-1px] right-[-2px]" />
+          <div id="triangulo-top-right" class="absolute top-[-1px] right-[-2px]" />
           <p class="font-bold text-[40px]">{left?.title}</p>
           {left?.description && (
             <p dangerouslySetInnerHTML={{ __html: left?.description }} />

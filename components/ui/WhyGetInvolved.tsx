@@ -32,7 +32,9 @@ export default function WhyGetInvolved(
               class="bg-[#0C2929] flex flex-col justify-center items-start gap-2 md:gap-6 p-6 md:p-10 py-12 md:py-20 text-[#FFFFFF] rounded-2xl"
             >
               {labelIcon && <Icon id={labelIcon ?? ""} size={40} />}
-              {title && <p class="font-semibold mt-2 md:mt-0 md:text-[28px]">{title}</p>}
+              {title && (
+                <p class="font-semibold mt-2 md:mt-0 md:text-[28px]">{title}</p>
+              )}
               {description && <p class="text-xs md:text-base">{description}</p>}
             </div>
           ))}
