@@ -50,7 +50,7 @@ export default function Awards(
               {elimination?.title}
             </p>
           )}
-          <div class="grid grid-cols-2 gap-2 md:gap-4 rounded-2xl">
+          <div class="grid grid-cols-2 gap-4 rounded-2xl">
             {elimination?.cards?.map((
               { iconLabel, title, description }: EliminatoriesAwardsProps,
               index: number,

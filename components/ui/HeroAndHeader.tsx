@@ -75,17 +75,32 @@ export default function HeroAndHeader(
                       href={cta?.href}
                     >
                       <button class="relative w-[274px] h-[88px] bg-[#00FF80] hover:bg-[#FFF] flex justify-center items-center">
-                        <div id="triangulo-top-right" class="absolute top-[-1px] right-[-1px]" />
-                        <div id="triangulo-top-left" class="absolute top-[-1px] left-[-1px]" />
-                        <div id="triangulo-bottom-right" class="absolute bottom-[-1px] right-[-1px]" />
-                        <div id="triangulo-bottom-left" class="absolute bottom-[-1px] left-[-1px]" />
+                        <div
+                          id="triangulo-top-right"
+                          class="absolute top-[-1px] right-[-1px]"
+                        />
+                        <div
+                          id="triangulo-top-left"
+                          class="absolute top-[-1px] left-[-1px]"
+                        />
+                        <div
+                          id="triangulo-bottom-right"
+                          class="absolute bottom-[-1px] right-[-1px]"
+                        />
+                        <div
+                          id="triangulo-bottom-left"
+                          class="absolute bottom-[-1px] left-[-1px]"
+                        />
                         <span
-                        style={{ width: 'calc(100% - 8px)', height: 'calc(100% - 12px)' }}
-                        class="absolute bs-gradient-green z-0 font-bold text-[32px] text-[#000] rounded-[30px] flex items-center justify-center"
-                      >
-                        {cta.text}
-                      </span>
-                      </button>         
+                          style={{
+                            width: "calc(100% - 8px)",
+                            height: "calc(100% - 12px)",
+                          }}
+                          class="absolute bs-gradient-green z-0 font-bold text-[32px] text-[#000] rounded-[30px] flex items-center justify-center"
+                        >
+                          {cta.text}
+                        </span>
+                      </button>
                     </a>
                     {cta?.infoBottom && (
                       <p
@@ -135,23 +150,38 @@ export default function HeroAndHeader(
               )}
             </div>
             <div class="flex justify-center">
-            {cta?.text && (
+              {cta?.text && (
                 <div class="w-full flex justify-center">
                   <div class="t">
                     <div class="flex flex-col gap-2 text-center items-center">
                       <a class="relative flex justify-center" href={cta?.href}>
-                      <button class="relative w-[150px] h-[50px] bg-[#00FF80] hover:bg-[#FFF] flex justify-center items-center">
-                        <div id="triangulo-top-right-mini" class="absolute top-[-1px] right-[-1px]" />
-                        <div id="triangulo-top-left-mini" class="absolute top-[-1px] left-[-1px]" />
-                        <div id="triangulo-bottom-right-mini" class="absolute bottom-[-1px] right-[-1px]" />
-                        <div id="triangulo-bottom-left-mini" class="absolute bottom-[-1px] left-[-1px]" />
-                        <span
-                        style={{ width: 'calc(100% - 8px)', height: 'calc(100% - 2px)' }}
-                          class="absolute bs-gradient-green top-[1px] z-1 font-bold text-[18px] rounded-[30px] flex justify-center items-center"
-                        >
-                          {cta.text}
-                        </span>
-                      </button>   
+                        <button class="relative w-[150px] h-[50px] bg-[#00FF80] hover:bg-[#FFF] flex justify-center items-center">
+                          <div
+                            id="triangulo-top-right-mini"
+                            class="absolute top-[-1px] right-[-1px]"
+                          />
+                          <div
+                            id="triangulo-top-left-mini"
+                            class="absolute top-[-1px] left-[-1px]"
+                          />
+                          <div
+                            id="triangulo-bottom-right-mini"
+                            class="absolute bottom-[-1px] right-[-1px]"
+                          />
+                          <div
+                            id="triangulo-bottom-left-mini"
+                            class="absolute bottom-[-1px] left-[-1px]"
+                          />
+                          <span
+                            style={{
+                              width: "calc(100% - 8px)",
+                              height: "calc(100% - 2px)",
+                            }}
+                            class="absolute bs-gradient-green top-[1px] z-1 font-bold text-[18px] rounded-[30px] flex justify-center items-center"
+                          >
+                            {cta.text}
+                          </span>
+                        </button>
                       </a>
                       {cta?.infoBottom && (
                         <p
