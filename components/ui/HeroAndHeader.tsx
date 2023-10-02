@@ -76,20 +76,16 @@ export default function HeroAndHeader(
                     >
                       <button class="relative w-[274px] h-[88px] bg-[#00FF80] hover:bg-[#FFF] flex justify-center items-center">
                         <div
-                          id="triangulo-top-right"
-                          class="absolute top-[-1px] right-[-1px]"
+                          class="triangulo-top-right-mini md:triangulo-top-right absolute top-[-1px] right-[-1px]"
                         />
                         <div
-                          id="triangulo-top-left"
-                          class="absolute top-[-1px] left-[-1px]"
+                          class="triangulo-top-left-mini md:triangulo-top-left absolute top-[-1px] left-[-2px]"
                         />
                         <div
-                          id="triangulo-bottom-right"
-                          class="absolute bottom-[-1px] right-[-1px]"
+                          class="triangulo-bottom-right-mini md:triangulo-bottom-right absolute bottom-[-1px] right-[-1px]"
                         />
                         <div
-                          id="triangulo-bottom-left"
-                          class="absolute bottom-[-1px] left-[-1px]"
+                          class="triangulo-bottom-left-mini md:triangulo-bottom-left absolute bottom-[-1px] left-[-2px]"
                         />
                         <span
                           style={{
@@ -157,27 +153,23 @@ export default function HeroAndHeader(
                       <a class="relative flex justify-center" href={cta?.href}>
                         <button class="relative w-[150px] h-[50px] bg-[#00FF80] flex justify-center items-center">
                           <div
-                            id="triangulo-top-right-mini"
-                            class="absolute top-[-1px] right-[-1px]"
+                            class="triangulo-top-right-mini md:triangulo-top-right absolute top-[-1px] right-[-1px]"
                           />
                           <div
-                            id="triangulo-top-left-mini"
-                            class="absolute top-[-1px] left-[-2px]"
+                            class="triangulo-top-left-mini md:triangulo-top-left absolute top-[-1px] left-[-2px]"
                           />
                           <div
-                            id="triangulo-bottom-right-mini"
-                            class="absolute bottom-[-1px] right-[-1px]"
+                            class="triangulo-bottom-right-mini md:triangulo-bottom-right absolute bottom-[-1px] right-[-1px]"
                           />
                           <div
-                            id="triangulo-bottom-left-mini"
-                            class="absolute bottom-[-1px] left-[-2px]"
+                            class="triangulo-bottom-left-mini md:triangulo-bottom-left absolute bottom-[-1px] left-[-2px]"
                           />
                           <span
                             style={{
                               width: "calc(100% - 8px)",
                               height: "calc(100% - 2px)",
                             }}
-                            class="absolute top-[1px] z-1 font-bold text-[18px] rounded-[30px] flex justify-center items-center"
+                            class="w-[calc(100% - 8px)] absolute top-[1px] z-1 font-bold text-[18px] rounded-[30px] flex justify-center items-center"
                           >
                             {cta.text}
                           </span>

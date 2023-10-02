@@ -14,7 +14,7 @@ export default function IndiqueEGanhe(
 ) {
   return (
     <div class="w-full bg-[#FFFFFF] py-5 md:py-10">
-      <div class="xl:container xl:mx-auto mx-5 md:mx-10 flex flex-col items-center md:items-start md:flex-row gap-6 md:gap-12">
+      <div class="xl:container xl:mx-auto mx-5 md:mx-10 flex flex-col items-center md:items-start md:flex-row gap-6 md:gap-12 md:items-center">
         <div class="flex flex-col gap-2 md:w-[60%] xl:w-[70%] items-center md:items-start text-center md:text-start">
           {title && (
             <p class="text-[#0A2121] text-[32px] md:text-[48px] font-semibold md:mr-4 mb-4">
