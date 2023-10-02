@@ -135,7 +135,7 @@ function CarrouselTestimonial(
         >
           <Slider class="carousel carousel-center sm:carousel-end w-full col-span-full row-start-1 row-end-4 gap-6">
             {testimonials?.map((testimonial, index) => (
-              <Slider.Item index={index} class="carousel-item w-[400px]">
+              <Slider.Item index={index} class="carousel-item w-[300px] md:w-[400px]">
                 <TestimonialItem
                   testimonial={testimonial}
                   lcp={index === 0 && preload}

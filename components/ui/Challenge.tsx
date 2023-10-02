@@ -19,7 +19,7 @@ export default function Challenge(
         <div class="font-semibold text-[#FFFFFF] text-[40px] md:text-[60px] lg:text-[80px] text-center">
           {title}
         </div>
-        <div class="flex flex-col items-center bg-[#EFF0F0] text-[#0D1717] p-2 px-4 gap-2 md:px-6 md:gap-4 h-max md:w-[80%]">
+        <div class="flex flex-col items-start bg-[#EFF0F0] text-[#0D1717] p-2 px-4 gap-2 md:px-6 md:gap-4 h-max md:w-[80%]">
           {description && (
             <p dangerouslySetInnerHTML={{ __html: description }}></p>
           )}

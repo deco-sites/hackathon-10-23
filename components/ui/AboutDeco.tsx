@@ -23,9 +23,11 @@ export default function AboutDeco(
           <p class="text-[#FFFFFF] font-semibold text-[40px] md:text-[56px]">
             {title}
           </p>
-          {description && (
-            <p dangerouslySetInnerHTML={{ __html: description }} />
-          )}
+          <div class="text-base md:text-[24px]">
+            {description && (
+              <p dangerouslySetInnerHTML={{ __html: description }} />
+            )}
+          </div>
         </div>
         <div>
           <Picture>
