@@ -32,7 +32,7 @@ function TestimonialItem(
   { testimonial, lcp }: { testimonial: TestimonialsProps; lcp?: boolean },
 ) {
   return (
-    <div class="card card-compact group border border-[#FFFFFF] text-[#FFFFFF] bg-transparent flex flex-col items-start gap-4 md:gap-6">
+    <div class="card card-compact group border border-[#FFFFFF] text-[#FFFFFF] bg-transparent flex flex-col items-start gap-8 rounded-none p-8">
       {testimonial?.comentary && <p class="text-lg">{testimonial?.comentary}
       </p>}
       <div class="flex gap-4">
@@ -70,13 +70,13 @@ function Dots({ testimonials, interval = 0 }: CarrouselConfigs) {
           `,
         }}
       />
-      <ul class="carousel justify-center col-span-full gap-4 z-10 row-start-4">
+      <ul class="carousel justify-center col-start-1 col-end-3 gap-2 z-10 row-start-4">
         {testimonials?.map((_, index) => (
           <li class="carousel-item">
             <Slider.Dot index={index}>
               <div class="py-5">
                 <div
-                  class="w-16 sm:w-20 h-0.5 rounded group-disabled:animate-progress bg-gradient-to-r from-base-100 from-[length:var(--dot-progress)] to-[rgba(255,255,255,0.4)] to-[length:var(--dot-progress)]"
+                  class="w-3 h-3 rounded-full group-disabled:animate-progress bg-gradient-to-r from-base-100 from-[length:var(--dot-progress)] to-[rgba(255,255,255,0.4)] to-[length:var(--dot-progress)]"
                   style={{ animationDuration: `${interval}s` }}
                 />
               </div>
@@ -91,22 +91,22 @@ function Dots({ testimonials, interval = 0 }: CarrouselConfigs) {
 function Buttons() {
   return (
     <>
-      <div class="flex items-center justify-center z-10 col-start-1 row-start-2">
-        <Slider.PrevButton class="btn btn-circle glass">
+      <div class="flex items-center justify-center z-10 col-start-4 row-start-4">
+        <Slider.PrevButton class="btn btn-circle border border-white rounded-full bg-transparent">
           <Icon
             class="text-base-100"
             size={24}
-            id="ChevronLeft"
+            id="ArrowLeft"
             strokeWidth={3}
           />
         </Slider.PrevButton>
       </div>
-      <div class="flex items-center justify-center z-10 col-start-3 row-start-2">
-        <Slider.NextButton class="btn btn-circle glass">
+      <div class="flex items-center justify-center z-10 col-start-5 row-start-4">
+        <Slider.NextButton class="btn btn-circle border border-white rounded-full bg-transparent">
           <Icon
             class="text-base-100"
             size={24}
-            id="ChevronRight"
+            id="ArrowRight"
             strokeWidth={3}
           />
         </Slider.NextButton>
@@ -121,7 +121,7 @@ function CarrouselTestimonial(
   const id = useId();
 
   return (
-    <div class="bg-[#0A2121] w-full py-5 md:py-10 hidden">
+    <div class="bg-[#0A2121] w-full py-5 md:py-10">
       <div class="xl:container xl:mx-auto mx-5 md:mx-10 flex flex-col gap-2">
         {title && (
           <p class="text-[#02F67C] text-[40px] font-semibold">{title}</p>
@@ -131,9 +131,9 @@ function CarrouselTestimonial(
 
         <div
           id={id}
-          class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px]"
+          class="grid grid-cols-[80px_80px_1fr_80px_80px] sm:grid-cols-[160px_1fr_100px_80px] grid-rows-4"
         >
-          <Slider class="carousel carousel-center sm:carousel-end w-full col-span-full row-start-2 row-end-5 gap-6">
+          <Slider class="carousel carousel-center sm:carousel-end w-full col-span-full row-start-1 row-end-4 gap-6">
             {testimonials?.map((testimonial, index) => (
               <Slider.Item index={index} class="carousel-item w-[400px]">
                 <TestimonialItem

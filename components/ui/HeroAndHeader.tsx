@@ -132,7 +132,7 @@ export default function HeroAndHeader(
             <img src={logo?.src ?? ""} alt={logo?.alt ?? "Logo by deco"} />
           </div>
           <div class="flex flex-col gap-4">
-            <p class="text-[50px] sm:text-[65px] text-[#FAFAFA] font-bold h-12 flex items-center">
+            <p class="text-[15vw] sm:text-[65px] text-[#FAFAFA] font-bold h-12 flex items-center">
               {title}
             </p>
             <div class="flex justify-between">
@@ -155,14 +155,14 @@ export default function HeroAndHeader(
                   <div class="t">
                     <div class="flex flex-col gap-2 text-center items-center">
                       <a class="relative flex justify-center" href={cta?.href}>
-                        <button class="relative w-[150px] h-[50px] bg-[#00FF80] hover:bg-[#FFF] flex justify-center items-center">
+                        <button class="relative w-[150px] h-[50px] bg-[#00FF80] flex justify-center items-center">
                           <div
                             id="triangulo-top-right-mini"
                             class="absolute top-[-1px] right-[-1px]"
                           />
                           <div
                             id="triangulo-top-left-mini"
-                            class="absolute top-[-1px] left-[-1px]"
+                            class="absolute top-[-1px] left-[-2px]"
                           />
                           <div
                             id="triangulo-bottom-right-mini"
@@ -170,14 +170,14 @@ export default function HeroAndHeader(
                           />
                           <div
                             id="triangulo-bottom-left-mini"
-                            class="absolute bottom-[-1px] left-[-1px]"
+                            class="absolute bottom-[-1px] left-[-2px]"
                           />
                           <span
                             style={{
                               width: "calc(100% - 8px)",
                               height: "calc(100% - 2px)",
                             }}
-                            class="absolute bs-gradient-green top-[1px] z-1 font-bold text-[18px] rounded-[30px] flex justify-center items-center"
+                            class="absolute top-[1px] z-1 font-bold text-[18px] rounded-[30px] flex justify-center items-center"
                           >
                             {cta.text}
                           </span>
