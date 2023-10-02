@@ -25,9 +25,9 @@ export default function Rules({ title, points }: RulesProps) {
               class="text-[#FFFFFF] grid grid-rows-[20px_1px_1fr_1px] grid-cols-1 md:grid-rows-1 md:grid-cols-[180px_1px_1fr_1px] gap-4 md:gap-6 justify-start text-base md:text-[20px]"
             >
               <p class="w-max text-[32px] font-medium">{title}</p>
-                {description && (
-                  <p dangerouslySetInnerHTML={{ __html: description }} />
-                )}
+              {description && (
+                <p dangerouslySetInnerHTML={{ __html: description }} />
+              )}
             </div>
           ))}
         </div>

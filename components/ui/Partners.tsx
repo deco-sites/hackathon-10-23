@@ -58,7 +58,7 @@ function Partners(props: Props) {
             </div>
             <div
               style="animation-delay: 300ms"
-              class="flex flex-row flex-nowrap w-full animate-walk py-2 items-center gap-4"
+              class="flex flex-row flex-nowrap w-full animate-walk py-6 items-center gap-4"
             >
               {list.map((element, index) => (
                 <img
