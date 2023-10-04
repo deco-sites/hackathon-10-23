@@ -36,13 +36,17 @@ function TestimonialItem(
       {testimonial?.comentary && <p class="text-lg">{testimonial?.comentary}
       </p>}
       <div class="flex gap-4">
-        <div>
-          <img
-            src={testimonial?.author?.image ?? ""}
-            alt={testimonial?.author?.name ?? ""}
-            class="rounded-full"
-          />
-        </div>
+        {
+          testimonial?.author?.image && (
+            <div>
+              <img
+                src={testimonial?.author?.image ?? ""}
+                alt={testimonial?.author?.name ?? ""}
+                class="rounded-full"
+              />
+            </div>
+          )
+        }
         <div class="flex flex-col gap-2">
           {testimonial?.author?.name && (
             <p class="font-semibold">{testimonial?.author?.name}</p>
