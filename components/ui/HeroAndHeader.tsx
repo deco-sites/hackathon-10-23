@@ -90,13 +90,15 @@ export default function HeroAndHeader(
                         </span>
                       </button>
                       {/* Exemplo que não deu certo de utilização com o clip */}
-                      {/* <button class="relative flex justify-center items-center inner clipped p-4 hover:bg-[#FFF]">
+                      {
+                        /* <button class="relative flex justify-center items-center inner clipped p-4 hover:bg-[#FFF]">
                         <span
                           class="absolute w-full h-full bs-gradient-green z-0 font-bold text-[32px] text-[#000] rounded-[30px] flex items-center justify-center"
                         >
                           {cta.text}
                         </span>
-                      </button> */}
+                      </button> */
+                      }
                     </a>
                     {cta?.infoBottom && (
                       <p
