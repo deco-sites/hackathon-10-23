@@ -153,7 +153,7 @@ export default function HeroAndHeader(
                   <div class="t">
                     <div class="flex flex-col gap-2 text-center items-center">
                       <a class="relative flex justify-center" href={cta?.href}>
-                        <button class="relative w-[150px] h-[50px] bg-[#00FF80] flex justify-center items-center">
+                        <button class="relative w-[280px] h-[50px] bg-[#00FF80] flex justify-center items-center">
                           <div class="triangulo-top-right-mini md:triangulo-top-right absolute top-[-1px] right-[-1px]" />
                           <div class="triangulo-top-left-mini md:triangulo-top-left absolute top-[-1px] left-[-2px]" />
                           <div class="triangulo-bottom-right-mini md:triangulo-bottom-right absolute bottom-[-1px] right-[-1px]" />
