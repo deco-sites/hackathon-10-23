@@ -106,6 +106,25 @@
   .activeSummaryCarrosel:disabled > div > div {
     background-color: #FFF;
   }
+
+  .inner {
+    background-color: rgb(0 255 128);
+    color: rgb(0,0,0);
+    
+    height: 100px;
+    width: 490px;
+    font-size: 32px;
+    font-weight: 700px;
+  }
+
+  .clipped {
+      /* https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape/polygon - coordenadas: x y */
+    /* triangulos de lateral 20px */
+    /* OS VALORES 470 E 490 É A LARGURA DO BOTÃO (WIDTH) */
+    /* OS VALORES 470 E 490 É A LARGURA DO BOTÃO (WIDTH) */
+    /* OS VALORES 78, 80 E 100 É A ALTURA DO BOTÃO (HEIGHT) */
+    clip-path:polygon(20px 0, 470px 0, 490px 20px, 490px 78px, 470px 100px, 20px 100px, 0 80px, 0 20px);
+  }
 }
 
 @layer components {

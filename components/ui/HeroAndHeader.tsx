@@ -74,7 +74,7 @@ export default function HeroAndHeader(
                       class="relative flex justify-center text-[#00FF80]"
                       href={cta?.href}
                     >
-                      <button class="relative w-[274px] h-[88px] bg-[#00FF80] hover:bg-[#FFF] flex justify-center items-center">
+                      <button class="relative w-[484px] h-[88px] bg-[#00FF80] hover:bg-[#FFF] flex justify-center items-center">
                         <div class="triangulo-top-right-mini md:triangulo-top-right absolute top-[-1px] right-[-1px]" />
                         <div class="triangulo-top-left-mini md:triangulo-top-left absolute top-[-1px] left-[-2px]" />
                         <div class="triangulo-bottom-right-mini md:triangulo-bottom-right absolute bottom-[-1px] right-[-1px]" />
@@ -89,6 +89,14 @@ export default function HeroAndHeader(
                           {cta.text}
                         </span>
                       </button>
+                      {/* Exemplo que não deu certo de utilização com o clip */}
+                      {/* <button class="relative flex justify-center items-center inner clipped p-4 hover:bg-[#FFF]">
+                        <span
+                          class="absolute w-full h-full bs-gradient-green z-0 font-bold text-[32px] text-[#000] rounded-[30px] flex items-center justify-center"
+                        >
+                          {cta.text}
+                        </span>
+                      </button> */}
                     </a>
                     {cta?.infoBottom && (
                       <p
