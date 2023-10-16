@@ -5,22 +5,22 @@
 import * as $$$$0 from "./routes/styles.css.ts";
 import * as $$$$1 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/SliderJS.tsx";
-import * as $$$$$$$$0 from "./sections/Theme.tsx";
-import * as $$$$$$$$1 from "./sections/Head.tsx";
-import * as $$$$$$$$2 from "./sections/Times.tsx";
-import * as $$$$$$$$3 from "./sections/WhyGetInvolved.tsx";
-import * as $$$$$$$$4 from "./sections/Partners.tsx";
-import * as $$$$$$$$5 from "./sections/CarrouselTestimonial.tsx";
-import * as $$$$$$$$6 from "./sections/SimpleTextList.tsx";
-import * as $$$$$$$$7 from "./sections/HeroAndHeader.tsx";
+import * as $$$$$$$$0 from "./sections/Awards.tsx";
+import * as $$$$$$$$1 from "./sections/Rules.tsx";
+import * as $$$$$$$$2 from "./sections/AboutDeco.tsx";
+import * as $$$$$$$$3 from "./sections/Intro.tsx";
+import * as $$$$$$$$4 from "./sections/HeroAndHeader.tsx";
+import * as $$$$$$$$5 from "./sections/Challege.tsx";
+import * as $$$$$$$$6 from "./sections/Partners.tsx";
+import * as $$$$$$$$7 from "./sections/Theme.tsx";
 import * as $$$$$$$$8 from "./sections/Footer.tsx";
-import * as $$$$$$$$9 from "./sections/Intro.tsx";
-import * as $$$$$$$$10 from "./sections/Challege.tsx";
-import * as $$$$$$$$11 from "./sections/AboutDeco.tsx";
-import * as $$$$$$$$12 from "./sections/Awards.tsx";
-import * as $$$$$$$$13 from "./sections/IndiqueEGanhe.tsx";
-import * as $$$$$$$$14 from "./sections/ParagraphList.tsx";
-import * as $$$$$$$$15 from "./sections/Rules.tsx";
+import * as $$$$$$$$9 from "./sections/Head.tsx";
+import * as $$$$$$$$10 from "./sections/IndiqueEGanhe.tsx";
+import * as $$$$$$$$11 from "./sections/Times.tsx";
+import * as $$$$$$$$12 from "./sections/SimpleTextList.tsx";
+import * as $$$$$$$$13 from "./sections/CarrouselTestimonial.tsx";
+import * as $$$$$$$$14 from "./sections/WhyGetInvolved.tsx";
+import * as $$$$$$$$15 from "./sections/ParagraphList.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
@@ -200,22 +200,22 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i1$$$$2,
     "$live/sections/Slot.tsx": i1$$$$3,
     "$live/sections/UseSlot.tsx": i1$$$$4,
-    "deco-sites/hackathon-10-23/sections/AboutDeco.tsx": $$$$$$$$11,
-    "deco-sites/hackathon-10-23/sections/Awards.tsx": $$$$$$$$12,
-    "deco-sites/hackathon-10-23/sections/CarrouselTestimonial.tsx": $$$$$$$$5,
-    "deco-sites/hackathon-10-23/sections/Challege.tsx": $$$$$$$$10,
+    "deco-sites/hackathon-10-23/sections/AboutDeco.tsx": $$$$$$$$2,
+    "deco-sites/hackathon-10-23/sections/Awards.tsx": $$$$$$$$0,
+    "deco-sites/hackathon-10-23/sections/CarrouselTestimonial.tsx": $$$$$$$$13,
+    "deco-sites/hackathon-10-23/sections/Challege.tsx": $$$$$$$$5,
     "deco-sites/hackathon-10-23/sections/Footer.tsx": $$$$$$$$8,
-    "deco-sites/hackathon-10-23/sections/Head.tsx": $$$$$$$$1,
-    "deco-sites/hackathon-10-23/sections/HeroAndHeader.tsx": $$$$$$$$7,
-    "deco-sites/hackathon-10-23/sections/IndiqueEGanhe.tsx": $$$$$$$$13,
-    "deco-sites/hackathon-10-23/sections/Intro.tsx": $$$$$$$$9,
-    "deco-sites/hackathon-10-23/sections/ParagraphList.tsx": $$$$$$$$14,
-    "deco-sites/hackathon-10-23/sections/Partners.tsx": $$$$$$$$4,
-    "deco-sites/hackathon-10-23/sections/Rules.tsx": $$$$$$$$15,
-    "deco-sites/hackathon-10-23/sections/SimpleTextList.tsx": $$$$$$$$6,
-    "deco-sites/hackathon-10-23/sections/Theme.tsx": $$$$$$$$0,
-    "deco-sites/hackathon-10-23/sections/Times.tsx": $$$$$$$$2,
-    "deco-sites/hackathon-10-23/sections/WhyGetInvolved.tsx": $$$$$$$$3,
+    "deco-sites/hackathon-10-23/sections/Head.tsx": $$$$$$$$9,
+    "deco-sites/hackathon-10-23/sections/HeroAndHeader.tsx": $$$$$$$$4,
+    "deco-sites/hackathon-10-23/sections/IndiqueEGanhe.tsx": $$$$$$$$10,
+    "deco-sites/hackathon-10-23/sections/Intro.tsx": $$$$$$$$3,
+    "deco-sites/hackathon-10-23/sections/ParagraphList.tsx": $$$$$$$$15,
+    "deco-sites/hackathon-10-23/sections/Partners.tsx": $$$$$$$$6,
+    "deco-sites/hackathon-10-23/sections/Rules.tsx": $$$$$$$$1,
+    "deco-sites/hackathon-10-23/sections/SimpleTextList.tsx": $$$$$$$$12,
+    "deco-sites/hackathon-10-23/sections/Theme.tsx": $$$$$$$$7,
+    "deco-sites/hackathon-10-23/sections/Times.tsx": $$$$$$$$11,
+    "deco-sites/hackathon-10-23/sections/WhyGetInvolved.tsx": $$$$$$$$14,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$0,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$1,
     "deco-sites/std/sections/configLinxImpulse.global.tsx": i2$$$$$2,
