@@ -190,7 +190,7 @@ export default function HeroAndHeader(
                 href={href}
                 key={index}
                 role="button"
-                class={`flex justify-center items-center text-[#0D1717] bg-[#FAFAFA] h-7 px-2 font-semibold`}
+                class={`flex justify-center items-center text-[#0D1717] bg-[#FAFAFA] p-2 font-semibold`}
               >
                 {iconLabel && <Icon class="mr-2" id={iconLabel} size={16} />}
                 {label}
