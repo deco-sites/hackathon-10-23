@@ -9,11 +9,11 @@ export interface Image {
 export interface Props {
   title?: string;
 
-  rowImages?: ColumnImages[]
+  rowImages?: ColumnImages[];
 }
 
 export interface ColumnImages {
-  colImages: Image[]
+  colImages: Image[];
 }
 
 const IMAGES = [
@@ -52,17 +52,19 @@ function Partners(props: Props) {
         <div class="w-full text-center items-center">
           <div class="overflow-hidden pt-2">
             {list.map(({ colImages }, index) => (
-              <div 
-                class={`flex flex-row flex-nowrap w-full animate-walk ${index > 0 && index < list.length - 1 ? 'py-6' : 'py-2'} items-center gap-4`}
+              <div
+                class={`flex flex-row flex-nowrap w-full animate-walk ${
+                  index > 0 && index < list.length - 1 ? "py-6" : "py-2"
+                } items-center gap-4`}
                 style={`animation-delay: ${300 * index}ms`}
               >
-              { colImages.map((item: Image) => (
-                <img
-                  key={index}
-                  src={item.image}
-                  alt={item.altText || ""}
-                />
-              )) }
+                {colImages.map((item: Image) => (
+                  <img
+                    key={index}
+                    src={item.image}
+                    alt={item.altText || ""}
+                  />
+                ))}
               </div>
             ))}
           </div>
