@@ -71,7 +71,7 @@ export default function HeroAndHeader(
                 <div class="py-24 px-14 relative z-[0] rounded-full">
                   <div class="flex flex-col gap-2 items-center">
                     <a
-                      class="relative flex justify-center items-center bg-[#949E9E] text-white text-[32px] w-[500px] h-[88px] bs-gradient-green"
+                      class="relative flex justify-center items-center bg-[#949E9E] text-white text-[32px] w-[500px] h-[88px]"
                       href={cta?.href}
                       style="clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);"
                     >
