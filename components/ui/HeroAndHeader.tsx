@@ -71,24 +71,11 @@ export default function HeroAndHeader(
                 <div class="py-24 px-14 relative z-[0] rounded-full">
                   <div class="flex flex-col gap-2 items-center">
                     <a
-                      class="relative flex justify-center text-[#00FF80]"
+                      class="relative flex justify-center items-center bg-[#949E9E] text-white text-[32px] w-[500px] h-[88px]"
                       href={cta?.href}
+                      style="clip-path:polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);"
                     >
-                      <button class="relative w-[500px] h-[88px] bg-[#949E9E] hover:bg-[#949E9E] flex justify-center items-center">
-                        <div class="triangulo-top-right-mini md:triangulo-top-right absolute top-[-1px] right-[-1px]" />
-                        <div class="triangulo-top-left-mini md:triangulo-top-left absolute top-[-1px] left-[-2px]" />
-                        <div class="triangulo-bottom-right-mini md:triangulo-bottom-right absolute bottom-[-1px] right-[-1px]" />
-                        <div class="triangulo-bottom-left-mini md:triangulo-bottom-left absolute bottom-[-1px] left-[-2px]" />
-                        <span
-                          style={{
-                            width: "calc(100% - 8px)",
-                            height: "calc(100% - 12px)",
-                          }}
-                          class="absolute bs-gradient-green z-0 font-bold text-[32px] text-white rounded-[30px] flex items-center justify-center"
-                        >
-                          {cta.text}
-                        </span>
-                      </button>
+                      {cta.text}
                       {/* Exemplo que não deu certo de utilização com o clip */}
                       {
                         /* <button class="relative flex justify-center items-center inner clipped p-4 hover:bg-[#FFF]">
@@ -152,22 +139,11 @@ export default function HeroAndHeader(
                 <div class="w-full flex justify-center">
                   <div class="t">
                     <div class="flex flex-col gap-2 text-center items-center">
-                      <a class="relative flex justify-center" href={cta?.href}>
-                        <button class="relative w-[280px] h-[50px] bg-[#949E9E] flex justify-center items-center">
-                          <div class="triangulo-top-right-mini md:triangulo-top-right absolute top-[-1px] right-[-1px]" />
-                          <div class="triangulo-top-left-mini md:triangulo-top-left absolute top-[-1px] left-[-2px]" />
-                          <div class="triangulo-bottom-right-mini md:triangulo-bottom-right absolute bottom-[-1px] right-[-1px]" />
-                          <div class="triangulo-bottom-left-mini md:triangulo-bottom-left absolute bottom-[-1px] left-[-2px]" />
-                          <span
-                            style={{
-                              width: "calc(100% - 8px)",
-                              height: "calc(100% - 2px)",
-                            }}
-                            class="w-[calc(100% - 8px)] absolute top-[1px] z-1 font-bold text-[18px] rounded-[30px] flex justify-center items-center"
-                          >
-                            {cta.text}
-                          </span>
-                        </button>
+                      <a
+                        class="relative flex justify-center items-center w-[280px] h-[50px] bg-[#949E9E] text-white" href={cta?.href}
+                        style="clip-path:polygon(15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px), 0 15px);"
+                      >
+                      {cta.text}
                       </a>
                       {cta?.infoBottom && (
                         <p
