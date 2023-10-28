@@ -71,10 +71,10 @@ export default function HeroAndHeader(
                 <div class="py-24 px-14 relative z-[0] rounded-full">
                   <div class="flex flex-col gap-2 items-center">
                     <a
-                      class="relative flex justify-center text-[#00FF80]"
+                      class="relative flex justify-center text-[#949E9E]"
                       href={cta?.href}
                     >
-                      <button class="relative w-[500px] h-[88px] bg-[#00FF80] hover:bg-[#FFF] flex justify-center items-center">
+                      <button class="relative w-[500px] h-[88px] bg-[#949E9E] hover:bg-[#FFF] flex justify-center items-center">
                         <div class="triangulo-top-right-mini md:triangulo-top-right absolute top-[-1px] right-[-1px]" />
                         <div class="triangulo-top-left-mini md:triangulo-top-left absolute top-[-1px] left-[-2px]" />
                         <div class="triangulo-bottom-right-mini md:triangulo-bottom-right absolute bottom-[-1px] right-[-1px]" />
@@ -153,7 +153,7 @@ export default function HeroAndHeader(
                   <div class="t">
                     <div class="flex flex-col gap-2 text-center items-center">
                       <a class="relative flex justify-center" href={cta?.href}>
-                        <button class="relative w-[280px] h-[50px] bg-[#00FF80] flex justify-center items-center">
+                        <button class="relative w-[280px] h-[50px] bg-[#949E9E] flex justify-center items-center">
                           <div class="triangulo-top-right-mini md:triangulo-top-right absolute top-[-1px] right-[-1px]" />
                           <div class="triangulo-top-left-mini md:triangulo-top-left absolute top-[-1px] left-[-2px]" />
                           <div class="triangulo-bottom-right-mini md:triangulo-bottom-right absolute bottom-[-1px] right-[-1px]" />
